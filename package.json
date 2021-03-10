@@ -1,0 +1,57 @@
+{
+  "name": "just-ecommerce",
+  "version": "1.0.0",
+  "description": "challenge",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --progress --colors --inline --hot",
+    "production": "webpack --progress -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulo70/just-ecommerce.git"
+  },
+  "author": "paulo costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulo70/just-ecommerce/issues"
+  },
+  "homepage": "https://github.com/paulo70/just-ecommerce#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.0",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.6.0",
+    "axios": "^0.19.2",
+    "babel-loader": "^8.0.6",
+    "cross-env": "5.1.5",
+    "css-loader": "^3.0.0",
+    "file-loader": "1.1.11",
+    "mini-css-extract-plugin": "^0.7.0",
+    "node-sass": "^4.13.1",
+    "optimize-css-assets-webpack-plugin": "4.0.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "1.2.5",
+    "webpack": "^4.3.0",
+    "webpack-bundle-analyzer": "^3.0.3",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10",
+    "webpack-merge": "^4.1.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "bootstrap": "^4.5.0",
+    "hookrouter": "^1.2.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1"
+  }
+}
