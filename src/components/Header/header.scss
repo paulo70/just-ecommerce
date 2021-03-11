@@ -1,0 +1,25 @@
+.header{
+  background: #c62828;
+  
+  display: flex;
+  flex: 1;
+  padding: 0.938em;
+
+  &-title{
+    color: #fff;
+
+    &-sub{
+      font-size: 0.500em;
+      color: #fff;
+    }
+  }
+}
+
+.nav-bars{
+  background: #f44336;
+  height: 1.875em;
+}
+
+.hidden{
+  display: none;
+}
