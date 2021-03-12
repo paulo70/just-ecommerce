@@ -4,10 +4,29 @@ import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingBasket, faCashRegister, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
+import Badge from '../Badge'
+
 
 import './header.scss'
 
 const Header = props => {
+
+  const calculateTotal = () =>{
+
+    if(props.product.length === 0){
+      return '0,00'
+    }
+
+    let total = 0;
+
+    props.product.forEach(products => {
+      let price = products.price
+      total += parseFloat(price) * products.qtd
+    })
+
+    return total.toFixed(2).toString()
+  }
+
   return (
     <>
       <header className='header'>
@@ -35,15 +54,17 @@ const Header = props => {
               </NavDropdown.Item>
 
               <NavDropdown.Divider />
-              
-
+                <Badge 
+                  product = {props.product}
+                  deleteProduct = {props.deleteProduct}
+                />
               <NavDropdown.Divider />
 
               <NavDropdown.Item href=''>
-                Total: R$ '0,00'
+                Total: {calculateTotal()}
               </NavDropdown.Item>
 
-              <span className=''>
+              <span className={props.product.length === 0 ? 'hidden' : null}>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href='' onClick={() => props.handleCloseShopping(calculateTotal())}>
                   <FontAwesomeIcon icon ={faCashRegister} />
