@@ -1,5 +1,11 @@
-.banner{
+.container-banner{
+  background: #000;
+  
   width: 100;
   display: flex;
   flex-direction: row;
+
+  &-image{
+    margin: 0 auto;
+  }
 }

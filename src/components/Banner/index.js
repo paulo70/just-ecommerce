@@ -6,8 +6,8 @@ import './banner.scss'
 
 const Banner = () => {
   return (
-    <div className='container'>
-      <img src = {File} alt = 'banner'/>
+    <div className='container-banner'>
+      <img src = {File} alt = 'banner' className='container-banner-image'/>
     </div>
   )
 }
