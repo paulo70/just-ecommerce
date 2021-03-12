@@ -14,17 +14,25 @@ To run this project you need:
 
 # Prints
 
+# Empty car
 ![Alt text](/src/assets/empty-car.png?raw=true "empty car")
 
 
+# List of products
 ![Alt text](/src/assets/list-products.png?raw=true "list product")
 
 
+# Details of products
 ![Alt text](/src/assets/details.png?raw=true "details product")
 
 
+# Add product to car
 ![Alt text](/src/assets/add-product.png?raw=true "add product")
 
 
+
+
+
+# Added product
 ![Alt text](/src/assets/product-added.png?raw=true "added product")
 
