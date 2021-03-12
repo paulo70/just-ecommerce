@@ -1,0 +1,49 @@
+.modal-content{
+  border: 1px solid #d4d1d1;
+}
+
+.modal-backdrop {
+  background-color: transparent;
+}
+
+.modal-backdrop.show {
+  opacity: 0.1;
+}
+
+.modal-title {
+  text-transform: uppercase;
+  font-size: 0.938em;
+  color: #461234;
+  font-weight: bold;
+}
+
+.modal-infos{
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li{
+    color: #461234;
+    
+    padding-bottom: 0.313em;
+    padding-top: 0.313em;
+  }
+
+  li:first-child{
+    font-weight: bold;
+  }
+
+  li:last-child{
+    font-size: 0.875em;
+    line-height: 1.7;
+  }
+}
+
+button.close{
+  background: #fff;
+  color: #711b5a;
+  
+  border: none;
+  padding: 0.125em 0.625em;
+}

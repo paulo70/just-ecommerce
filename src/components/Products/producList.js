@@ -10,6 +10,7 @@ const ProductList = (props) => {
 
   const [data, setdata] = useState([])
   const [showDetails, setShowDetails] = useState(false)
+  const [details, setDetails] = useState([])
 
   useEffect(() => {
 
@@ -33,10 +34,10 @@ const ProductList = (props) => {
     props.showMsg(product)
   }
 
-  const handleDetails = (e) => {
+  const handleDetails = (e, product) => {
     e.preventDefault()
     setShowDetails(true)
-    console.log('oi')
+    setDetails(product)
   }
 
   const handleClose = () => {
@@ -46,14 +47,14 @@ const ProductList = (props) => {
   return (
     <div className='product-list'>
       { data.map((product, index) => (
-        <Card key = {product.id}>
+        <Card key = {index}>
           <span className='product-list-name'>{product.title}</span>
           <img src = {product.picture} alt='product image' />
           <span className='product-list-price'>{`$ ${product.price}`}</span>
           
           <a href='/' 
             className='product-list-details'
-            onClick = {(e) => handleDetails(e)}>
+            onClick = {(e) => handleDetails(e, product)}>
             Ver detalhes  
           </a>
 
@@ -62,15 +63,14 @@ const ProductList = (props) => {
             className='product-list-button'>
             Comprar
           </a>
-
-          <Modal 
-            state = {showDetails} 
-            title = 'Detalhes do produto'
-            handleClose = {handleClose}
-            description = {product.description}
-          />
         </Card>
       ))}
+      <Modal 
+        state = {showDetails} 
+        title = 'Detalhes do produto'
+        handleClose = {handleClose}
+        details = {details} 
+        />
     </div>
   )
 }
