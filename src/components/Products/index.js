@@ -20,7 +20,7 @@ const Product = props => {
 
     setTimeout(() => {
       setShowMessage(false)
-    },3000)
+    },800000)
   }
 
   return(
