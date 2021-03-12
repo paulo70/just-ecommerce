@@ -17,9 +17,6 @@ To run this project you need:
 ![Alt text](/src/assets/empty-car.png?raw=true "empty car")
 
 
-![Alt text](/src/assets/details.png?raw=true "details product")
-
-
 ![Alt text](/src/assets/list-products.png?raw=true "list product")
 
 
