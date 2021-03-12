@@ -9,8 +9,21 @@
 
   &-name,
   &-price {
-    color:#312828;
+    color: #461234;
+    text-transform: uppercase;
+    
     margin-bottom: 0.313em;
+  }
+
+  &-name{
+    font-size: 0.750em;
+  }
+
+  &-price{
+    font-weight: bold;
+    font-size: 1.250em;
+
+    margin-top: 1.250em;
   }
 
   &-button{

@@ -31,6 +31,7 @@ const ProductList = (props) => {
         <Card key = {product.id}>
           <span className='product-list-name'>{product.title}</span>
           <img src = {product.picture} alt='product image' />
+          <span className='product-list-price'>{`$ ${product.price}`}</span>
           <a href="/" 
             onClick = {(e) => handleBuy(e, product)} 
             className='product-list-button'>
