@@ -31,7 +31,7 @@ const Header = props => {
     <>
       <header className='header'>
         <h1 className='header-title'>
-          Books
+          CellPhone
          <span className='header-title-sub'>store</span>
         </h1>
       </header> 

@@ -18,7 +18,6 @@ const ProductList = (props) => {
     try{
       const response = await getProducts()
       setdata(response.products)
-      console.log(response.products, 'data')
     } catch(error){
       console.log('ERROR', error)
     }
