@@ -23,8 +23,5 @@ To run this project you need:
 ![Alt text](/src/assets/details.png?raw=true "details product")
 
 
-![Alt text](/src/assets/add-product.png?raw=true "add product")
-
-
 ![Alt text](/src/assets/product-added.png?raw=true "added product")
 
